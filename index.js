@@ -25,12 +25,7 @@ connect();
 const app = express();
 app.use(express.json());
 
-app.use(
-  cors({
-    credentials: true,
-    origin: true,
-  })
-);
+app.use(cors());
 
 // app.use(function (req, res, next) {
 //   res.header('Access-Control-Allow-Origin', '191.176.91.228'); // update to match the domain you will make the request from
@@ -46,6 +41,6 @@ app.get('/', function (req, res) {
   console.log('GET OK');
 });
 
-app.use('/', routeInsertFeedback);
+// app.use('/', routeInsertFeedback);
 
 app.listen(3000, () => console.log('API iniciada'));
