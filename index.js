@@ -41,6 +41,6 @@ app.get('/', function (req, res) {
   console.log('GET OK');
 });
 
-// app.use('/', routeInsertFeedback);
+app.use('/', routeInsertFeedback);
 
 app.listen(3000, () => console.log('API iniciada'));
