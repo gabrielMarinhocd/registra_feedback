@@ -18,8 +18,9 @@ router.post('/', async (req, res, next) => {
     const trasaction = new TransactionModel(req.query);
     await trasaction.save();
     console.log(name);
-
-    res.status(200).send('Removido com sucesso!');
+    console.log('OK');
+    res.status(200).send('Post OK!');
+    next();
   } catch (err) {
     res.status(500).send(err.message);
   }

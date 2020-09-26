@@ -37,6 +37,9 @@ app.use(function (req, res, next) {
 
 app.get('/', function (req, res, next) {
   res.send('Ok api iniciada ');
+  console.log('GET OK');
+
+  next();
 });
 
 app.use('/', routeInsertFeedback);
