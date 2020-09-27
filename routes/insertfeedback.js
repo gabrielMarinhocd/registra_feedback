@@ -5,21 +5,20 @@ const router = express.Router();
 
 router.post('/', async (req, res) => {
   try {
-    const { name, email, menssagem, nota } = req.query;
+    const { name, email, menssagem, nota, data } = req.query;
 
-    const teste = {
+    const grade = {
       name: name,
       email: email,
       menssagem: menssagem,
       nota: nota,
+      data: data,
     };
-    console.log(teste);
+    console.log(grade);
 
     const trasaction = new TransactionModel(req.query);
     await trasaction.save();
-    console.log(name);
-    console.log('OK');
-    res.status(200).send('Post OK!');
+    res.status(200).send('Salvo com sucesso!');
   } catch (err) {
     res.status(500).send(err.message);
   }
