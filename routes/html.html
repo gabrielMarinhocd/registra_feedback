@@ -1,38 +1,21 @@
-import express from 'express';
-import { TransactionModel } from '../models/conection.js';
-import nodemailer from 'nodemailer';
-import dotenv from 'dotenv';
+<!DOCTYPE html>
+<html lang="en">
 
-dotenv.config();
-const { USER, SENHA } = process.env;
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=i, initial-scale=1.0">
+  <title>Document</title>
+</head>
 
-const router = express.Router();
-
-router.post('/', async (req, res) => {
-  try {
-    const grade = req.query;
-
-    const trasaction = new TransactionModel(req.query);
-    await trasaction.save();
-
-    await sendemail(grade);
-
-    res.status(200).send('Salvo com sucesso!');
-  } catch (err) {
-    res.status(500).send(err.message);
-  }
-});
-
-const sendemail = (grade) => {
-  const { name, email, menssagem, nota, data } = grade;
-  const conteudoHTML = `<div style="background-color: #1a237e; 
+<body>
+  <div style="background-color: #1a237e; 
   min-width: 150px; min-height: 50px; text-align: center; 
   color: white; font-size: 50px; font-family: 'Abril Fatface', cursive;">
     <a style="color: inherit; text-decoration:none; " href="http://gabrielmarinho.site" target="_blank"
       rel="noopener noreferrer"> GM </a>
   </div>
   <div style="
-    margin: 0, 3%, 0%, 3%;
+  margin: 0, 3%, 0%, 3%;
   padding: 1%;
   display: flex;
   font-size: 25px;
@@ -41,7 +24,7 @@ const sendemail = (grade) => {
   ">
 
     <p>
-      Obrigado pelo feedback ${name} aqui está meu currículo caso queira dar uma olhada ou apresentar na empresa ou a um
+      Obrigado pelo seu feedback aqui está meu currículo caso queira dar uma olhada ou apresentar na empresa ou a um
       amigo.
       Mais de qualquer forma só o seu feedback já me ajudou muito. Espero melhorar meu site cada vez mais e com isso vou
       aperfeiçoando meus conhecimentos para me tornar um bom programdor.<br />
@@ -54,7 +37,8 @@ const sendemail = (grade) => {
 
 
   </div>
-  <div style="background-color: #1a237e; 
+  <div
+    style="background-color: #1a237e; 
   min-width: 150px; min-height: 50px; text-align: center; 
   color: white; font-size: 50px; font-family: 'Abril Fatface', cursive; padding: 0.5%; padding: 5px; align-items: center;">
 
@@ -68,40 +52,7 @@ const sendemail = (grade) => {
       <img style="width: 50px; height: 50px;" id="img-email"
         src="https://gabrielmarinho.site/Imagens/email-open-envelope-in-a-rounded-square_icon-icons.com_70497.png"
         class="img-responsive" /></a>
-  </div>`;
+  </div>
+</body>
 
-  const $usuario = USER;
-  const $senha = SENHA;
-
-  const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: $usuario,
-      pass: $senha,
-    },
-  });
-
-  const $destinatario = email;
-
-  const mailOptions = {
-    from: $usuario,
-    to: [$destinatario, 'biel32771@gmail.com'],
-    subject: `Obrigado pelo feedback ${name}`,
-    html: conteudoHTML,
-    attachments: [
-      {
-        path: './docs/Curriculo_Desenvolvedor-GABRIEL_MARINHO_DOS_SANTOS.pdf',
-      },
-    ],
-  };
-
-  transporter.sendMail(mailOptions, function (error, info) {
-    if (error) {
-      console.log(error);
-    } else {
-      console.log('Email enviado: ' + info.response);
-    }
-  });
-};
-
-export default router;
+</html>

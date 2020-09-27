@@ -1,6 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import routeInsertFeedback from './routes/insertfeedback.js';
+import routeListFeedback from './routes/listafeedbacks.js';
 import dotenv from 'dotenv';
 import cors from 'cors';
 
@@ -27,12 +28,8 @@ app.use(express.json());
 
 app.use(cors());
 
-app.get('/', function (req, res) {
-  res.send('Ok api iniciada ');
-  console.log('GET OK');
-});
-
 app.use('/', routeInsertFeedback);
+app.use('/', routeListFeedback);
 
 const APP_PORT = process.env.PORT || 3000;
 app.listen(APP_PORT, () => {
