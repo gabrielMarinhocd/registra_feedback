@@ -75,7 +75,10 @@ const sendemail = (grade) => {
   const $senha = SENHA;
 
   const transporter = nodemailer.createTransport({
-    service: 'smtp.gmail.com',
+    service: 'gmail',
+    host: 'smtp.gmail.com',
+    port: 587,
+    secure: true,
     auth: {
       user: $usuario,
       pass: $senha,
