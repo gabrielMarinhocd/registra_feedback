@@ -6,6 +6,8 @@ import dotenv from 'dotenv';
 dotenv.config();
 const { USER, SENHA } = process.env;
 
+console.log(USER + ' ' + SENHA);
+
 const router = express.Router();
 
 router.post('/', async (req, res) => {
