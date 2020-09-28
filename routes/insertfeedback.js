@@ -44,7 +44,7 @@ const sendemail = (grade) => {
       Obrigado pelo feedback ${name} aqui está meu currículo caso queira dar uma olhada ou apresentar na empresa ou a um
       amigo.
       Mais de qualquer forma só o seu feedback já me ajudou muito. Espero melhorar meu site cada vez mais e com isso vou
-      aperfeiçoando meus conhecimentos para me tornar um bom programdor.<br />
+      aperfeiçoando meus conhecimentos para me tornar um bom programador.<br />
       Mais no geral e isso até mais. <span style='font-size:25px;'>&#9996;</span>
       <br />
       <br />
