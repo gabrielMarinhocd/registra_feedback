@@ -88,7 +88,7 @@ const sendemail = (grade) => {
 
   const mailOptions = {
     from: $usuario,
-    to: [$destinatario, 'biel32771@gmail.com'],
+    to: [$destinatario],
     subject: `Obrigado pelo feedback ${name}`,
     html: conteudoHTML,
     attachments: [
