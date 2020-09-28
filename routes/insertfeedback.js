@@ -4,6 +4,7 @@ import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
 
 dotenv.config();
+
 const { USER, SENHA } = process.env;
 
 const router = express.Router();
@@ -70,13 +71,13 @@ const sendemail = (grade) => {
         class="img-responsive" /></a>
   </div>`;
 
-  const $usuario = USER;
+  const $usuario = 'apikey';
   const $senha = SENHA;
 
   const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    host: 'smtp.gmail.com',
-    port: 587,
+    service: 'smtp.sendgrid.net',
+    host: 'smtp.sendgrid.net',
+    port: 465,
     secure: true,
     auth: {
       user: $usuario,
@@ -84,11 +85,9 @@ const sendemail = (grade) => {
     },
   });
 
-  const $destinatario = email;
-
   const mailOptions = {
-    from: $usuario,
-    to: [$destinatario],
+    from: USER,
+    to: email,
     subject: `Obrigado pelo feedback ${name}`,
     html: conteudoHTML,
     attachments: [
