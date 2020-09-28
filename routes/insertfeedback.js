@@ -11,7 +11,6 @@ const router = express.Router();
 router.post('/', async (req, res) => {
   try {
     const grade = req.query;
-    console.log(USER + ' ' + SENHA);
 
     const trasaction = new TransactionModel(req.query);
     await trasaction.save();
