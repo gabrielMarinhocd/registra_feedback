@@ -29,7 +29,7 @@ const sendemail = (grade) => {
   const conteudoHTML = `<div style="background-color: #1a237e; 
   min-width: 150px; min-height: 50px; text-align: center; 
   color: white; font-size: 50px; font-family: 'Abril Fatface', cursive;">
-    <a style="color: inherit; text-decoration:none; " href="http://gabrielmarinho.site" target="_blank"
+    <a style="color: inherit; text-decoration:none; " href="https://gabrielmarinho.site" target="_blank"
       rel="noopener noreferrer"> GM </a>
   </div>
   <div style="
@@ -49,7 +49,7 @@ const sendemail = (grade) => {
       Mais no geral e isso até mais. <span style='font-size:25px;'>&#9996;</span>
       <br />
       <br />
-      Assinado Gabriel Marinho desenvolvedor e administrador do site <a href="http://gabrielmarinho.site"
+      Assinado Gabriel Marinho desenvolvedor e administrador do site <a href="https://gabrielmarinho.site"
         target="_blank" rel="noopener noreferrer"> gabrielmarinho.site</a>
     </p>
 
