@@ -24,6 +24,9 @@
     <h2>Pré-requisitos</h2>
     <ul>
       <li>Nodejs</li>
+      <li>Conta no mondb Altas</li>
+      <li>Conta de e-mail</li>
+      <li>Conta no sendgrid</li>
     </ul>
   </div>
 
@@ -33,6 +36,7 @@
       <li>Clone este repositorio</li>
       <li>Abra a pasta no terminal</li>
       <li>npm install</li>
+      <li>Adicione o arquivo .env com seus dados (siga o padrão do config.txt)</li>
       <li>node --experimental-modules ./index.js</li>
     </ol>
   </div>
@@ -43,11 +47,11 @@
       <li>HTML/CSS</li>
       <li>Nodejs</li>
       <li>Javascript</li>
-      <li>nodemail(Framework)</li>
-      <li>Moongose (Framework)</li>
+      <li>nodemailer (Framework)</li>
+      <li>Mongoose (Framework)</li>
       <li>Express (Framework)</li>
       <li>Doteevn (Framework)</li>
-      <li>Cors (Framework)</li>
+      <li>Cors (Framework)</li>aju
       <li>Sendgrid para envio de e-mail</li>
     </ul>
   </div>
