@@ -1,10 +1,10 @@
  <h2>Api Feedback</h2>
   <p>
-    E uma api rest que serve ao site gabrielmarinho.site. Ela possibilita o envio de email de agradecimento dos usuraios que deixarem seu feedback no site.
-    Alem disso ele salva os dados do feedback no moongodb Altas. 
+    E uma Api Rest que serve ao site gabrielmarinho.site. Ela possibilita o envio de e-mail de agradecimento dos usuários que deixarem seu feedback no site. Além disso ele salva os dados do feedback no Moongodb Altas.
   </p>
   <p>
-    O e-mail de agradecimento tambem possui um anexo com meu curriculo para dar uma olhada ou para que possa mostrar na empresa.
+    O e-mail de agradecimento também possui um anexo com meu currículo para dar uma olhada ou para que possa mostrar na empresa.
+    <img src="https://github.com/gabrielMarinhocd/registra_feedback/blob/master/Imagens/e-mail.png" />
   </p>
   </div>
 
@@ -21,14 +21,14 @@
   </div>
 
   <div>
-    <h2>Pre-requisitos</h2>
+    <h2>Pré-requisitos</h2>
     <ul>
       <li>Nodejs</li>
     </ul>
   </div>
 
   <div>
-    <h2>Como executar o site?</h2>
+    <h2>Como executar?</h2>
     <ol>
       <li>Clone este repositorio</li>
       <li>Abra a pasta no terminal</li>
