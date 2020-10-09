@@ -48,5 +48,6 @@
       <li>Express (Framework)</li>
       <li>Doteevn (Framework)</li>
       <li>Cors (Framework)</li>
+      <li>Sendgrid para envio de e-mail</li>
     </ul>
   </div>

@@ -1,0 +1,5 @@
+DB_CONNECTION="Conecção com moongodb altas"
+USER="Email"
+SENHA="senha do email"
+
+API_KEY="uso o sengrid"
