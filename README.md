@@ -10,13 +10,13 @@
 
   <div>
       <h2> GIFs do funcionamento integrado com site gabrielmarinho.site</h2>
-       <img src="https://github.com/gabrielMarinhocd/Meu_site/blob/master/Imagens/GIFS/feedback-1.gif"
+       <img src="https://github.com/gabrielMarinhocd/registra_feedback/blob/master/Imagens/feedback-1.gif"
         width="400" height="250" margin="10px" />
-       <img src="https://github.com/gabrielMarinhocd/Meu_site/blob/master/Imagens/GIFS/feedback-2.gif"
+       <img src="https://github.com/gabrielMarinhocd/registra_feedback/blob/master/Imagens/feedback-2.gif"
         width="400" height="250" margin="10px" />
-       <img src="https://github.com/gabrielMarinhocd/Meu_site/blob/master/Imagens/GIFS/feedback-3.gif"
+       <img src="https://github.com/gabrielMarinhocd/registra_feedback/blob/master/Imagens/feedback-3.gif"
         width="400" height="250" margin="10px" />
-       <img src="https://github.com/gabrielMarinhocd/Meu_site/blob/master/Imagens/GIFS/feedback-4.gif"
+       <img src="https://github.com/gabrielMarinhocd/registra_feedback/blob/master/Imagens/feedback-4.gif"
         width="400" height="250" margin="10px" />
   </div>
 
