@@ -29,7 +29,7 @@ const sendemail = (grade) => {
   const conteudoHTML = `<div style="background-color: #1a237e; 
   min-width: 150px; min-height: 50px; text-align: center; 
   color: white; font-size: 50px; font-family: 'Abril Fatface', cursive;">
-    <a style="color: inherit; text-decoration:none; " href="https://gabrielmarinho.site" target="_blank"
+    <a style="color: inherit; text-decoration:none; " href="https://gabrielmsantos.com.br" target="_blank"
       rel="noopener noreferrer"> GM </a>
   </div>
   <div style="
@@ -49,8 +49,8 @@ const sendemail = (grade) => {
       Mais no geral e isso até mais. <span style='font-size:25px;'>&#9996;</span>
       <br />
       <br />
-      Assinado Gabriel Marinho desenvolvedor e administrador do site <a href="https://gabrielmarinho.site"
-        target="_blank" rel="noopener noreferrer"> gabrielmarinho.site</a>
+      Assinado Gabriel Marinho desenvolvedor e administrador do site <a href="https://gabrielmsantos.com.br"
+        target="_blank" rel="noopener noreferrer"> gabrielmsantos.com.br</a>
     </p>
 
 
@@ -61,13 +61,13 @@ const sendemail = (grade) => {
 
     <a id="link-email" href="https://www.linkedin.com/in/gabriel-marinho-5094bb132" target="_blank">
       <img style="width: 50px; height: 50px;" id="img-email"
-        src="https://gabrielmarinho.site/Imagens/linkedin-sign_icon-icons.com_73508.png" class="img-responsive" /></a>
+        src="https://gabrielmsantos.com.br/Imagens/linkedin-sign_icon-icons.com_73508.png" class="img-responsive" /></a>
     <a id="link-github" href="https://github.com/gabrielMarinhocd/" target="_blank">
       <img style="width: 50px; height: 50px;" id="img-github"
-        src="https://gabrielmarinho.site/Imagens/github-logo_icon-icons.com_73546.png" class="img-responsive" /></a>
+        src="https://gabrielmsantos.com.br/Imagens/github-logo_icon-icons.com_73546.png" class="img-responsive" /></a>
     <a id="link-email" href="mailto:gabrielmarinhodossantoscd@gmail.com" target="_blank">
       <img style="width: 50px; height: 50px;" id="img-email"
-        src="https://gabrielmarinho.site/Imagens/email-open-envelope-in-a-rounded-square_icon-icons.com_70497.png"
+        src="https://gabrielmsantos.com.br/Imagens/email-open-envelope-in-a-rounded-square_icon-icons.com_70497.png"
         class="img-responsive" /></a>
   </div>`;
 
